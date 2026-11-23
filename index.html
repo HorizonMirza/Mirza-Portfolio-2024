@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
 
     <!-- AOS -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@3.0.0-beta.6/dist/aos.css" />
 
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body id="home">
+  <body data-bs-spy="scroll" data-bs-target="#navbarNav">
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm fixed-top">
       <div class="container">
@@ -24,7 +24,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              <a class="nav-link active" href="#home">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#about">About</a>
@@ -45,9 +45,9 @@
     <!-- Akhir Navbar -->
 
     <!-- Jumbotron -->
-    <section class="jumbotron text-center">
-      <img src="img/1.png" alt="Muhammad Mirza" width="200px" class="rounded-circle img-thumbnail" />
-      <h1 class="display-4">Muhammd Mirza</h1>
+    <section id="home" class="jumbotron text-center">
+      <img src="img/1.png" alt="Muhammad Mirza" width="200" class="rounded-circle img-thumbnail" />
+      <h1 class="display-4">Muhammad Mirza</h1>
       <p class="lead"></p>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
@@ -69,10 +69,10 @@
         </div>
         <div class="row justify-content-center fs-5 text-center">
           <div class="col-md-4" data-aos="fade-right">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ullam suscipit nobis, odit reprehenderit omnis illum et quisquam quos maiores.</p>
+            <p>Mahasiswa Ilmu Komputer di Universitas Bina Nusantara dengan peminatan Artificial Intelligence dan minat besar pada inovasi teknologi. Saya telah membangun fondasi yang kuat di Full-Stack Development dan teknologi AI, sambil aktif menjelajahi ekosistem kripto.</p>
           </div>
           <div class="col-md-4" data-aos="fade-left" data-aos-delay="200">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem sit impedit veritatis natus hic, tempore vel libero, quaerat maiores debitis eum laboriosam officiis ea delectus!</p>
+            <p>Di luar latar belakang teknis, saya adalah pembangun komunitas yang telah mengembangkan berbagai inisiatif, mulai dari bisnis voucher game digital hingga komunitas padel dengan lebih dari 1.000 anggota.</p>
           </div>
         </div>
       </div>
@@ -94,48 +94,63 @@
             <h2>Gallery</h2>
           </div>
         </div>
-        <div class="row justify-content-center">
+        <div class="row gallery-grid">
           <div class="col-md-4 mb-3">
-            <div class="card" data-aos="flip-left" data-aot-duration="500">
-              <img src="img/1.png" class="card-img-top" alt="..." />
+            <div class="card" data-aos="flip-left" data-aos-duration="500">
+              <img src="img/catfin-r.jpg" class="card-img-top" alt="Dashboard CatFin-R: ringkasan pendapatan, grafik arus kas, dan peringatan stok" />
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="card-title"><a href="#" class="stretched-link text-reset text-decoration-none" data-bs-toggle="modal" data-bs-target="#projectModal" data-url="https://catering-finance-report-se.vercel.app" data-url-label="Lihat Demo">CatFin-R: Catering Finance</a></h5>
+                <p class="card-text">Sistem berbasis web untuk pemilik usaha katering: stok, keuangan, dan laporan dalam satu platform.</p>
               </div>
             </div>
           </div>
 
           <div class="col-md-4 mb-3">
-            <div class="card" data-aos="flip-left" data-aot-duration="500" data-aos-delay="100">
-              <img src="img/1.png" class="card-img-top" alt="..." />
+            <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="100">
+              <img src="img/ripe-ai.jpg" class="card-img-top" alt="Halaman utama RIPE.AI untuk deteksi kematangan buah" />
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="card-title"><a href="#" class="stretched-link text-reset text-decoration-none" data-bs-toggle="modal" data-bs-target="#projectModal" data-url="https://fruit-classifier-mu.vercel.app/" data-url-label="Lihat Demo">RIPE.AI</a></h5>
+                <p class="card-text">Aplikasi web yang mengklasifikasikan kematangan buah secara real-time dari warna dan tekstur, tanpa deep learning.</p>
               </div>
             </div>
           </div>
 
           <div class="col-md-4 mb-3">
-            <div class="card" data-aos="flip-left" data-aot-duration="500" data-aos-delay="200">
-              <img src="img/1.png" class="card-img-top" alt="..." />
+            <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="200">
+              <img src="img/crypto-pedia.jpg" class="card-img-top" alt="Halaman utama Crypto Pedia untuk melacak dan memprediksi harga Bitcoin" />
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="card-title"><a href="#" class="stretched-link text-reset text-decoration-none" data-bs-toggle="modal" data-bs-target="#projectModal" data-url="https://huggingface.co/spaces/donut12345/ML_LSTM_BTC" data-url-label="Lihat Demo">Crypto Pedia</a></h5>
+                <p class="card-text">Platform prediksi harga Bitcoin berbasis AI dengan dashboard real-time dan grafik harga aktual vs prediksi.</p>
               </div>
             </div>
           </div>
 
           <div class="col-md-4 mb-3">
-            <div class="card" data-aos="flip-left" data-aot-duration="500" data-aos-delay="300">
-              <img src="img/1.png" class="card-img-top" alt="..." />
+            <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="300">
+              <img src="img/mr-coffee.jpg" class="card-img-top" alt="Halaman utama website MR Coffee" />
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="card-title"><a href="#" class="stretched-link text-reset text-decoration-none" data-bs-toggle="modal" data-bs-target="#projectModal">MR Coffee</a></h5>
+                <p class="card-text">Website kedai kopi dengan pemesanan makanan dan minuman, halaman menu, serta halaman Tentang Kami dan Kontak.</p>
               </div>
             </div>
           </div>
 
           <div class="col-md-4 mb-3">
-            <div class="card" data-aos="flip-left" data-aot-duration="500" data-aos-delay="400">
-              <img src="img/1.png" class="card-img-top" alt="..." />
+            <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="400">
+              <img src="img/swarna-creation.jpg" class="card-img-top" alt="Halaman utama website Swarna Creation" />
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="card-title"><a href="#" class="stretched-link text-reset text-decoration-none" data-bs-toggle="modal" data-bs-target="#projectModal">Swarna Creation</a></h5>
+                <p class="card-text">Website resmi untuk usaha event organizer milik teman, dengan animasi halus dan UI interaktif.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-3">
+            <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="500">
+              <img src="img/gaas-dashboard.jpg" class="card-img-top" alt="Dashboard GAAS: jumlah transaksi per modul, status transaksi, dan grafik status modul" />
+              <div class="card-body">
+                <h5 class="card-title"><a href="#" class="stretched-link text-reset text-decoration-none" data-bs-toggle="modal" data-bs-target="#projectModal">GAAS</a></h5>
+                <p class="card-text">General Affair Application Support: aplikasi internal dengan persetujuan berjenjang dan chat real-time.</p>
               </div>
             </div>
           </div>
@@ -151,8 +166,28 @@
     </section>    
     <!-- Akhir Gallery -->
 
+    <!-- Modal Detail Project -->
+    <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="projectModalLabel">Project</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="" alt="" class="img-fluid rounded mb-3 project-modal-img" />
+            <p class="mb-0 project-modal-text"></p>
+          </div>
+          <div class="modal-footer project-modal-footer">
+            <a href="#" target="_blank" rel="noopener" class="btn btn-primary project-modal-link">Lihat Demo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Akhir Modal Detail Project -->
+
     <!-- Keyboard -->
-      <section id="my-keyboards">
+    <section id="my-keyboards">
         <div class="container">
           <div class="row text-center mb-3">
             <div class="col">
@@ -161,29 +196,28 @@
           </div>
           <div class="row">
             <div class="col-md-6 col-lg-4 mb-3">
-              <div class="keyboards-box">
-                <h4 class="keyboard-name">Example Keyboard</h4>
-                <img src="img/keyboard1.png" alt="keyboard" class="keyboard-img" />
-                <a href="#" class="btn btn-light keyboard-detail-button">Show Details</a>
+              <div class="keyboards-box" data-top="GREEN" data-bottom="RETRO TKL">
+                <h4 class="keyboard-name">Green Retro TKL</h4>
+                <img src="img/keyboard1.png" alt="Green Retro TKL" class="keyboard-img" />
+                <button type="button" class="btn btn-light keyboard-detail-button" data-bs-toggle="modal" data-bs-target="#keyboardModal">Show Details</button>
               </div>
             </div>
             <div class="col-md-6 col-lg-4 mb-3">
-              <div class="keyboards-box">
-                <h4 class="keyboard-name">Example Keyboard</h4>
-                <img src="img/keyboard2.png" alt="keyboard" class="keyboard-img" />
-                <a href="#" class="btn btn-light keyboard-detail-button">Show Details</a>
+              <div class="keyboards-box" data-top="RED" data-bottom="ACCENT 60%">
+                <h4 class="keyboard-name">Red Accent 60%</h4>
+                <img src="img/keyboard2.png" alt="Red Accent 60%" class="keyboard-img" />
+                <button type="button" class="btn btn-light keyboard-detail-button" data-bs-toggle="modal" data-bs-target="#keyboardModal">Show Details</button>
               </div>
             </div>
             <div class="col-md-6 col-lg-4 mb-3">
-              <div class="keyboards-box">
-                <h4 class="keyboard-name">Example Keyboard</h4>
-                <img src="img/keyboard3.png" alt="keyboard" class="keyboard-img" />
-                <a href="#" class="btn btn-light keyboard-detail-button">Show Details</a>
+              <div class="keyboards-box" data-top="LAVENDER" data-bottom="TKL">
+                <h4 class="keyboard-name">Lavender TKL</h4>
+                <img src="img/keyboard3.png" alt="Lavender TKL" class="keyboard-img" />
+                <button type="button" class="btn btn-light keyboard-detail-button" data-bs-toggle="modal" data-bs-target="#keyboardModal">Show Details</button>
               </div>
             </div>
           </div>
         </div>
-      </section>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#e2edff"
@@ -193,6 +227,22 @@
       </svg>
     </section>
     <!-- Akhir Keyboard -->
+
+    <!-- Modal Detail Keyboard -->
+    <div class="modal fade" id="keyboardModal" tabindex="-1" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="keyboardModalLabel">Keyboard</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center">
+            <img src="" alt="" class="img-fluid keyboard-modal-img" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Akhir Modal Detail Keyboard -->
 
     <!-- Contact -->
     <section id="contact">
@@ -206,22 +256,26 @@
           <div class="col-md-8">
             <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
               <strong>Terimakasih!</strong> Pesan anda sudah kami terima.
-              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              <button type="button" class="btn-close" aria-label="Close"></button>
+            </div>
+            <div class="alert alert-danger alert-dismissible fade show d-none my-alert-error" role="alert">
+              <strong>Maaf!</strong> Pesan gagal terkirim, silakan coba lagi.
+              <button type="button" class="btn-close" aria-label="Close"></button>
             </div>
             <form name="mirza-contact-form">
               <div class="mb-3">
-                <label for="Name" class="form-label">Nama Lengkap</label>
-                <input type="text" class="form-control" id="name" aria-describedby="name" name="nama"/>
+                <label for="name" class="form-label">Nama Lengkap</label>
+                <input type="text" class="form-control" id="name" name="nama" required />
               </div>
 
               <div class="mb-3">
                 <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" aria-describedby="email" name="email"/>
+                <input type="email" class="form-control" id="email" name="email" required />
               </div>
 
               <div class="mb-3">
                 <label for="pesan" class="form-label">Pesan</label>
-                <textarea class="form-control" id="Pesan" rows="3" name="pesan"></textarea>
+                <textarea class="form-control" id="pesan" rows="3" name="pesan" required></textarea>
               </div>
 
               <button type="submit" class="btn btn-primary btn-kirim">Kirim!</button>
@@ -245,20 +299,13 @@
 
     <!-- Footer -->
     <footer class="bg-primary text-white text-center pb-5">
-      <p>Created with <i class="bi bi-heart-fill text-danger"></i> by <a href="https://www.instagram.com/hrznmirza/" class="text-white fw-bold">Muhammad Mirza</a></p>
+      <p>Created with <i class="bi bi-heart-fill text-danger"></i> by <a href="https://www.instagram.com/horizonmirza/" target="_blank" rel="noopener" class="text-white fw-bold">Muhammad Mirza</a></p>
     </footer>
     <!-- Akhir Footer -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@3.0.0-beta.6/dist/aos.js"></script>
     <script>
-      const projectsImage = document.querySelectorAll(".projects-img");
-      projectsImage.forEach((img, i) => {
-        img.dataset.aos = "fade-down";
-        img.dataset.aosDelay = i * 100;
-        img.dataset.aosDuration = 1000;
-      });
-
       AOS.init({ once: true, duration: 2000 });
     </script>
 
@@ -266,7 +313,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/TextPlugin.min.js"></script>
     <script>
       gsap.registerPlugin(TextPlugin);
-      gsap.to(".lead", { duration: 2, delay: 1.5, text: "Web Developer | Student |Crypto Enthusiast" });
+      gsap.to(".lead", { duration: 2, delay: 1.5, text: "Web Developer | Student | Crypto Enthusiast" });
       gsap.from(".jumbotron img", { duration: 1, rotateY: 360, opacity: 0 });
       gsap.from(".navbar", { duration: 1.5, y: "-100%", opacity: 0, ease: "bounce" });
       gsap.from(".display-4", { duration: 1, y: -50, opacity: 0, delay: 0.5, ease: "back" });
@@ -279,6 +326,32 @@
         speed: 1000,
         glare: true,
       });
+
+      // isi modal sesuai project yang kartunya ditekan
+      const projectModal = document.getElementById('projectModal');
+      projectModal.addEventListener('show.bs.modal', (e) => {
+        const trigger = e.relatedTarget;
+        const card = trigger.closest('.card');
+        const img = card.querySelector('.card-img-top');
+        const link = projectModal.querySelector('.project-modal-link');
+        projectModal.querySelector('.modal-title').textContent = trigger.textContent;
+        projectModal.querySelector('.project-modal-img').src = img.getAttribute('src');
+        projectModal.querySelector('.project-modal-img').alt = img.alt;
+        projectModal.querySelector('.project-modal-text').textContent = card.querySelector('.card-text').textContent;
+        projectModal.querySelector('.project-modal-footer').classList.toggle('d-none', !trigger.dataset.url);
+        link.href = trigger.dataset.url || '#';
+        link.textContent = trigger.dataset.urlLabel || '';
+      });
+
+      // isi modal sesuai keyboard yang tombolnya ditekan
+      const keyboardModal = document.getElementById('keyboardModal');
+      keyboardModal.addEventListener('show.bs.modal', (e) => {
+        const box = e.relatedTarget.closest('.keyboards-box');
+        const img = box.querySelector('.keyboard-img');
+        keyboardModal.querySelector('.modal-title').textContent = box.querySelector('.keyboard-name').textContent;
+        keyboardModal.querySelector('.keyboard-modal-img').src = img.getAttribute('src');
+        keyboardModal.querySelector('.keyboard-modal-img').alt = img.alt;
+      });
     </script>
 
     <script>
@@ -287,20 +360,33 @@
       const btnKirim = document.querySelector('.btn-kirim');
       const btnLoading = document.querySelector('.btn-loading');
       const myAlert = document.querySelector('.my-alert');
+      const myAlertError = document.querySelector('.my-alert-error');
 
+      // tombol tutup cukup menyembunyikan alert agar bisa dipakai lagi
+      document.querySelectorAll('.my-alert .btn-close, .my-alert-error .btn-close').forEach((btn) => {
+        btn.addEventListener('click', () => btn.closest('.alert').classList.add('d-none'));
+      });
 
       form.addEventListener('submit', e => {
         e.preventDefault();
-        btnLoading.classList.toggle('d-none');
-        btnKirim.classList.toggle('d-none');
+        myAlert.classList.add('d-none');
+        myAlertError.classList.add('d-none');
+        btnLoading.classList.remove('d-none');
+        btnKirim.classList.add('d-none');
         fetch(scriptURL, { method: 'POST', body: new FormData(form)})
           .then((response) => {
-            btnLoading.classList.toggle('d-none');
-            btnKirim.classList.toggle('d-none');
-            myAlert.classList.toggle('d-none');
+            if (!response.ok) throw new Error('HTTP ' + response.status);
+            myAlert.classList.remove('d-none');
             form.reset();
-            console.log('Success!', response)})
-          .catch(error => console.error('Error!', error.message))
+          })
+          .catch((error) => {
+            myAlertError.classList.remove('d-none');
+            console.error('Error!', error.message);
+          })
+          .finally(() => {
+            btnLoading.classList.add('d-none');
+            btnKirim.classList.remove('d-none');
+          });
       });
     </script>
   </body>
