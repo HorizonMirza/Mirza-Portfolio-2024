@@ -99,7 +99,7 @@
             <div class="card" data-aos="flip-left" data-aos-duration="500">
               <img src="img/catfin-r.jpg" class="card-img-top" alt="Dashboard CatFin-R: ringkasan pendapatan, grafik arus kas, dan peringatan stok" />
               <div class="card-body">
-                <h5 class="card-title"><a href="#" class="stretched-link text-reset text-decoration-none" data-bs-toggle="modal" data-bs-target="#projectModal" data-url="https://catering-finance-report-se.vercel.app" data-url-label="Lihat Demo">CatFin-R: Catering Finance</a></h5>
+                <h5 class="card-title"><a href="#" class="stretched-link text-reset text-decoration-none" data-bs-toggle="modal" data-bs-target="#projectModal">CatFin-R: Catering Finance</a></h5>
                 <p class="card-text">Sistem berbasis web untuk pemilik usaha katering: stok, keuangan, dan laporan dalam satu platform.</p>
               </div>
             </div>
@@ -109,7 +109,7 @@
             <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="100">
               <img src="img/ripe-ai.jpg" class="card-img-top" alt="Halaman utama RIPE.AI untuk deteksi kematangan buah" />
               <div class="card-body">
-                <h5 class="card-title"><a href="#" class="stretched-link text-reset text-decoration-none" data-bs-toggle="modal" data-bs-target="#projectModal" data-url="https://fruit-classifier-mu.vercel.app/" data-url-label="Lihat Demo">RIPE.AI</a></h5>
+                <h5 class="card-title"><a href="#" class="stretched-link text-reset text-decoration-none" data-bs-toggle="modal" data-bs-target="#projectModal">RIPE.AI</a></h5>
                 <p class="card-text">Aplikasi web yang mengklasifikasikan kematangan buah secara real-time dari warna dan tekstur, tanpa deep learning.</p>
               </div>
             </div>
@@ -119,7 +119,7 @@
             <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="200">
               <img src="img/crypto-pedia.jpg" class="card-img-top" alt="Halaman utama Crypto Pedia untuk melacak dan memprediksi harga Bitcoin" />
               <div class="card-body">
-                <h5 class="card-title"><a href="#" class="stretched-link text-reset text-decoration-none" data-bs-toggle="modal" data-bs-target="#projectModal" data-url="https://huggingface.co/spaces/donut12345/ML_LSTM_BTC" data-url-label="Lihat Demo">Crypto Pedia</a></h5>
+                <h5 class="card-title"><a href="#" class="stretched-link text-reset text-decoration-none" data-bs-toggle="modal" data-bs-target="#projectModal">Crypto Pedia</a></h5>
                 <p class="card-text">Platform prediksi harga Bitcoin berbasis AI dengan dashboard real-time dan grafik harga aktual vs prediksi.</p>
               </div>
             </div>
@@ -175,11 +175,7 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            <img src="" alt="" class="img-fluid rounded mb-3 project-modal-img" />
-            <p class="mb-0 project-modal-text"></p>
-          </div>
-          <div class="modal-footer project-modal-footer">
-            <a href="#" target="_blank" rel="noopener" class="btn btn-primary project-modal-link">Lihat Demo</a>
+            <img src="" alt="" class="img-fluid rounded project-modal-img" />
           </div>
         </div>
       </div>
@@ -333,14 +329,9 @@
         const trigger = e.relatedTarget;
         const card = trigger.closest('.card');
         const img = card.querySelector('.card-img-top');
-        const link = projectModal.querySelector('.project-modal-link');
         projectModal.querySelector('.modal-title').textContent = trigger.textContent;
         projectModal.querySelector('.project-modal-img').src = img.getAttribute('src');
         projectModal.querySelector('.project-modal-img').alt = img.alt;
-        projectModal.querySelector('.project-modal-text').textContent = card.querySelector('.card-text').textContent;
-        projectModal.querySelector('.project-modal-footer').classList.toggle('d-none', !trigger.dataset.url);
-        link.href = trigger.dataset.url || '#';
-        link.textContent = trigger.dataset.urlLabel || '';
       });
 
       // isi modal sesuai keyboard yang tombolnya ditekan
