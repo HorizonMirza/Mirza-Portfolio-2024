@@ -1,23 +1,23 @@
 # Muhammad Mirza - Portfolio 2024
 
-Website portofolio pribadi satu halaman.
+A single-page personal portfolio website.
 
 **Live:** https://horizonmirza.github.io/Mirza-Portfolio-2024/
 
-## Isi Halaman
+## Sections
 
-- **Home**: foto, nama, dan peran
-- **About**: profil singkat
-- **Gallery**: project yang pernah dikerjakan (CatFin-R, RIPE.AI, Crypto Pedia, MR Coffee, Swarna Creation, GAAS)
-- **My Keyboards**: koleksi keyboard dengan efek tilt 3D
-- **Contact**: form pesan yang terhubung ke Google Sheets lewat Google Apps Script
+- **Home**: photo, name, and role
+- **About**: short profile
+- **Gallery**: projects I have worked on (CatFin-R, RIPE.AI, Crypto Pedia, MR Coffee, Swarna Creation, GAAS)
+- **My Keyboards**: keyboard collection with a 3D tilt effect
+- **Contact**: message form connected to Google Sheets through Google Apps Script
 
-## Teknologi
+## Tech Stack
 
 HTML, CSS, JavaScript, Bootstrap 5, AOS, GSAP, Vanilla Tilt
 
-## Menjalankan
+## Running Locally
 
-Buka `index.html` di browser, tanpa proses build.
+Open `index.html` in a browser. No build step is needed.
 
 © Muhammad Mirza
